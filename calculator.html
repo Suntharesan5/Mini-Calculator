@@ -1,0 +1,59 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="css1/calculator.css">
+</head> 
+<body>
+    <div class="calcu"><br>
+        <div class="in">
+          &nbsp;&nbsp;<input id="result">
+        </div>
+        
+        <div class="button1">
+        <button onclick="cal('1')"  value="1">1</button>
+        <button onclick="cal('2')"  value="2">2</button>
+        <button onclick="cal('3')"  value="3">3</button>
+        <button onclick="cal('+')"  value="+">+</button>
+    </div>
+    <div class="button2">
+        <button onclick="cal('4')"   value="4">4</button>
+        <button onclick="cal('5')"   value="5">5</button>
+        <button onclick="cal('6')"   value="6">6</button>
+        <button onclick="cal('-')"   value="-">-</button>
+    </div>
+    <div class="button3">
+        <button onclick="cal('7')" value="7">7</button>
+        <button onclick="cal('8')" value="8">8</button>
+        <button onclick="cal('9')" value="9">9</button>
+        <button onclick="cal('*')" value="*">*</button>
+    </div>
+    <div class="button4">
+        <button onclick="cal('0')" value="0">0</button>    
+        <button onclick="cal('/')" value="/">/</button>
+        <button onclick="calculate('=')" value="=">=</button>
+        <button onclick="clearresult()" value="clear">CE</button>
+    </div>
+    </div>
+    <script>
+       var result=document.getElementById("result");
+        function cal(value)
+        {          
+       result.value +=value;
+        }
+        function clearresult() {
+        result.value = "";
+      }
+      
+        function calculate() {
+        result.value = eval(result.value);
+      }
+      
+     
+
+    </script>
+</body>
+</html>

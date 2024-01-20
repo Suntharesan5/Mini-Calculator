@@ -1,0 +1,24 @@
+.calcu
+{
+    border: 3px solid  black;
+    height : 600px;
+    width : 455px;
+    margin-left : 180px;
+    margin-top:20px;
+}
+input
+{   
+     height:90px;
+     width:440px; 
+       
+}
+button
+{
+   height:90px;
+   width:90px;
+   padding:10px;
+   margin-left:15px;
+   margin-right:5px;
+   margin-bottom: 15px;
+   margin-top: 17px;
+}
